@@ -1,0 +1,39 @@
+# Advanced Web Scraper Requirements
+
+# Core scraping libraries
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+lxml>=4.9.0
+pandas>=2.0.0
+
+# Selenium for dynamic content
+selenium>=4.15.0
+webdriver-manager>=4.0.0
+
+# Data storage formats
+openpyxl>=3.1.0
+xlsxwriter>=3.1.0
+
+# Visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Web application (optional)
+flask>=2.3.0
+flask-cors>=4.0.0
+
+# Scheduling
+schedule>=1.2.0
+
+# Performance and monitoring
+psutil>=5.9.0
+
+# Development and testing
+pytest>=7.4.0
+pytest-cov>=4.1.0
+black>=23.7.0
+flake8>=6.0.0
+
+# Additional utilities
+python-dotenv>=1.0.0
+tqdm>=4.65.0

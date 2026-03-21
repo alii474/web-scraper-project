@@ -1,0 +1,17 @@
+# Sample products for price tracking demo
+
+# Books from books.toscrape.com
+http://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html
+http://books.toscrape.com/catalogue/tipping-the-velvet_999/index.html
+http://books.toscrape.com/catalogue/soumission_998/index.html
+http://books.toscrape.com/catalogue/sharp-objects_997/index.html
+http://books.toscrape.com/catalogue/sapiens-a-brief-history-of-humankind_996/index.html
+
+# Amazon products (examples)
+https://www.amazon.com/dp/B08N5WRWNW  # MacBook Air
+https://www.amazon.com/dp/B07XJ8C8F5  # AirPods Pro
+https://www.amazon.com/dp/B08F5GML2L  # iPad Air
+
+# eBay products (examples)
+https://www.ebay.com/itm/125412784123  # Example product 1
+https://www.ebay.com/itm/125412784124  # Example product 2

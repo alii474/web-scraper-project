@@ -1,0 +1,41 @@
+title,price,rating,availability,url,image,source,category,page_number,source_url,parsed_at,confidence_score
+A Light in the Attic,51.77,"['star-rating', 'Three']",In stock,1000.0,2.0,Books to Scrape,books,1,,2026-03-20T00:13:40.669503,1.0
+Tipping the Velvet,53.74,"['star-rating', 'One']",In stock,999.0,26.0,Books to Scrape,books,1,,2026-03-20T00:13:40.669518,1.0
+Soumission,50.1,"['star-rating', 'One']",In stock,998.0,3.0,Books to Scrape,books,1,,2026-03-20T00:13:40.669522,1.0
+Sharp Objects,47.82,"['star-rating', 'Four']",In stock,997.0,32.0,Books to Scrape,books,1,,2026-03-20T00:13:40.669524,1.0
+Sapiens: A Brief History of Humankind,54.23,"['star-rating', 'Five']",In stock,996.0,5.0,Books to Scrape,books,1,,2026-03-20T00:13:40.669526,1.0
+The Requiem Red,22.65,"['star-rating', 'One']",In stock,995.0,68.0,Books to Scrape,books,1,,2026-03-20T00:13:40.669528,1.0
+The Dirty Little Secrets of Getting Your Dream Job,33.34,"['star-rating', 'Four']",In stock,994.0,92.0,Books to Scrape,books,1,,2026-03-20T00:13:40.669529,1.0
+"The Coming Woman: A Novel Based on the Life of the Infamous Feminist, Victoria Woodhull",17.93,"['star-rating', 'Three']",In stock,993.0,3.0,Books to Scrape,books,1,,2026-03-20T00:13:40.669531,1.0
+1936.0,22.6,"['star-rating', 'Four']",In stock,1936.0,66.0,Books to Scrape,books,1,,2026-03-20T00:13:40.669532,1.0
+The Black Maria,52.15,"['star-rating', 'One']",In stock,991.0,58.0,Books to Scrape,books,1,,2026-03-20T00:13:40.669534,1.0
+1,13.99,"['star-rating', 'Two']",In stock,1.0,4.0,Books to Scrape,books,1,,2026-03-20T00:13:40.669536,1.0
+Shakespeare's Sonnets,20.66,"['star-rating', 'Four']",In stock,989.0,10.0,Books to Scrape,books,1,,2026-03-20T00:13:40.669537,1.0
+Set Me Free,17.46,"['star-rating', 'Five']",In stock,988.0,5.0,Books to Scrape,books,1,,2026-03-20T00:13:40.669539,1.0
+1.0,52.29,"['star-rating', 'Five']",In stock,1.0,94.0,Books to Scrape,books,1,,2026-03-20T00:13:40.669540,1.0
+Rip it Up and Start Again,35.02,"['star-rating', 'Five']",In stock,986.0,81.0,Books to Scrape,books,1,,2026-03-20T00:13:40.669542,1.0
+1981,57.25,"['star-rating', 'Three']",In stock,1981.0,54.0,Books to Scrape,books,1,,2026-03-20T00:13:40.669544,1.0
+Olio,23.88,"['star-rating', 'One']",In stock,984.0,55.0,Books to Scrape,books,1,,2026-03-20T00:13:40.669545,1.0
+1800.0,37.59,"['star-rating', 'One']",In stock,1800.0,9.0,Books to Scrape,books,1,,2026-03-20T00:13:40.669547,1.0
+Libertarianism for Beginners,51.33,"['star-rating', 'Two']",In stock,982.0,0.0,Books to Scrape,books,1,,2026-03-20T00:13:40.669549,1.0
+It's Only the Himalayas,45.17,"['star-rating', 'Two']",In stock,981.0,27.0,Books to Scrape,books,1,,2026-03-20T00:13:40.669550,1.0
+In Her Wake,12.84,"['star-rating', 'One']",In stock,980.0,5.0,Books to Scrape,books,2,,2026-03-20T00:13:40.669552,1.0
+How Music Works,37.32,"['star-rating', 'Two']",In stock,979.0,5.0,Books to Scrape,books,2,,2026-03-20T00:13:40.669553,1.0
+"Foolproof Preserving: A Guide to Small Batch Jams, Jellies, Pickles, Condiments, and More: A Foolproof Guide to Making Small Batch Jams, Jellies, Pickles, Condiments, and More",30.52,"['star-rating', 'Three']",In stock,978.0,9.0,Books to Scrape,books,2,,2026-03-20T00:13:40.669555,1.0
+2.0,25.27,"['star-rating', 'Five']",In stock,2.0,9.0,Books to Scrape,books,2,,2026-03-20T00:13:40.669557,1.0
+Black Dust,34.53,"['star-rating', 'Five']",In stock,976.0,44.0,Books to Scrape,books,2,,2026-03-20T00:13:40.669558,1.0
+Birdsong: A Story in Pictures,54.64,"['star-rating', 'Three']",In stock,975.0,6.0,Books to Scrape,books,2,,2026-03-20T00:13:40.669560,1.0
+America's Cradle of Quarterbacks: Western Pennsylvania's Football Factory from Johnny Unitas to Joe Montana,22.5,"['star-rating', 'Three']",In stock,974.0,0.0,Books to Scrape,books,2,,2026-03-20T00:13:40.669562,1.0
+Aladdin and His Wonderful Lamp,53.13,"['star-rating', 'Three']",In stock,973.0,6.0,Books to Scrape,books,2,,2026-03-20T00:13:40.669563,1.0
+Worlds Elsewhere: Journeys Around Shakespeare’s Globe,40.3,"['star-rating', 'Five']",In stock,972.0,2.0,Books to Scrape,books,2,,2026-03-20T00:13:40.669565,1.0
+Wall and Piece,44.18,"['star-rating', 'Four']",In stock,971.0,5.0,Books to Scrape,books,2,,2026-03-20T00:13:40.669566,1.0
+The Four Agreements: A Practical Guide to Personal Freedom,17.66,"['star-rating', 'Five']",In stock,970.0,0.0,Books to Scrape,books,2,,2026-03-20T00:13:40.669568,1.0
+The Five Love Languages: How to Express Heartfelt Commitment to Your Mate,31.05,"['star-rating', 'Three']",In stock,969.0,38.0,Books to Scrape,books,2,,2026-03-20T00:13:40.669569,1.0
+The Elephant Tree,23.82,"['star-rating', 'Five']",In stock,968.0,5.0,Books to Scrape,books,2,,2026-03-20T00:13:40.669571,1.0
+The Bear and the Piano,36.89,"['star-rating', 'One']",In stock,967.0,5.0,Books to Scrape,books,2,,2026-03-20T00:13:40.669573,1.0
+Sophie's World,15.94,"['star-rating', 'Five']",In stock,966.0,65.0,Books to Scrape,books,2,,2026-03-20T00:13:40.669579,1.0
+Penny Maybe,33.29,"['star-rating', 'Three']",In stock,965.0,12.0,Books to Scrape,books,2,,2026-03-20T00:13:40.669581,1.0
+1883.0,18.02,"['star-rating', 'Two']",In stock,1883.0,5.0,Books to Scrape,books,2,,2026-03-20T00:13:40.669583,1.0
+"In a Dark, Dark Wood",19.63,"['star-rating', 'One']",In stock,963.0,23.0,Books to Scrape,books,2,,2026-03-20T00:13:40.669584,1.0
+Behind Closed Doors,52.22,"['star-rating', 'Four']",In stock,962.0,1.0,Books to Scrape,books,2,,2026-03-20T00:13:40.669586,1.0
+You can't bury them all: Poems,33.63,"['star-rating', 'Two']",In stock,961.0,9.0,Books to Scrape,books,2,,2026-03-20T00:13:40.669587,1.0

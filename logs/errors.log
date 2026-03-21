@@ -1,0 +1,288 @@
+2026-03-19 16:58:50 - cli - [31mERROR[0m - Scraping failed: 'ScraperConfig' object has no attribute 'OUTPUT_DIR'
+File: C:\Users\Icon\Desktop\Web-Scraping Project\src\utils\logger.py:198
+Function: _log_with_extra
+
+2026-03-19 16:59:42 - cli - [31mERROR[0m - Scraping failed: 'ScraperConfig' object has no attribute 'DATA_DIR'
+File: C:\Users\Icon\Desktop\Web-Scraping Project\src\utils\logger.py:198
+Function: _log_with_extra
+
+2026-03-19 17:00:14 - visualizer - [31mERROR[0m - Failed to create comprehensive analysis: unhashable type: 'AttributeValueList'
+File: C:\Users\Icon\Desktop\Web-Scraping Project\src\utils\logger.py:198
+Function: _log_with_extra
+
+2026-03-19 17:00:14 - cli - [31mERROR[0m - Scraping failed: unhashable type: 'AttributeValueList'
+File: C:\Users\Icon\Desktop\Web-Scraping Project\src\utils\logger.py:198
+Function: _log_with_extra
+
+2026-03-19 17:05:33 - price_tracker_cli - [31mERROR[0m - Demo failed: unsupported format string passed to NoneType.__format__
+File: C:\Users\Icon\Desktop\Web-Scraping Project\src\utils\logger.py:198
+Function: _log_with_extra
+
+2026-03-19 17:05:56 - price_tracker_cli - [31mERROR[0m - Demo failed: unsupported format string passed to NoneType.__format__
+File: C:\Users\Icon\Desktop\Web-Scraping Project\src\utils\logger.py:198
+Function: _log_with_extra
+
+2026-03-19 17:10:53 - selenium_driver - [31mERROR[0m - Unexpected error with Selenium: 'SeleniumDriver' object has no attribute 'performance_logger'
+File: C:\Users\Icon\Desktop\Web-Scraping Project\src\utils\logger.py:198
+Function: _log_with_extra
+
+2026-03-19 17:10:53 - advanced_scraper - [31mERROR[0m - Failed to fetch page: http://books.toscrape.com/
+File: C:\Users\Icon\Desktop\Web-Scraping Project\src\utils\logger.py:198
+Function: _log_with_extra
+
+2026-03-19 17:10:58 - selenium_driver - [31mERROR[0m - Unexpected error with Selenium: 'SeleniumDriver' object has no attribute 'performance_logger'
+File: C:\Users\Icon\Desktop\Web-Scraping Project\src\utils\logger.py:198
+Function: _log_with_extra
+
+2026-03-19 17:10:58 - advanced_scraper - [31mERROR[0m - Failed to fetch page: http://books.toscrape.com/catalogue/page-2.html
+File: C:\Users\Icon\Desktop\Web-Scraping Project\src\utils\logger.py:198
+Function: _log_with_extra
+
+2026-03-19 17:11:05 - selenium_driver - [31mERROR[0m - Unexpected error with Selenium: 'SeleniumDriver' object has no attribute 'performance_logger'
+File: C:\Users\Icon\Desktop\Web-Scraping Project\src\utils\logger.py:198
+Function: _log_with_extra
+
+2026-03-19 17:11:05 - advanced_scraper - [31mERROR[0m - Failed to fetch page: http://books.toscrape.com/catalogue/page-3.html
+File: C:\Users\Icon\Desktop\Web-Scraping Project\src\utils\logger.py:198
+Function: _log_with_extra
+
+2026-03-19 17:11:05 - advanced_scraper - [31mERROR[0m - Error occurred: 'items_saved'
+File: C:\Users\Icon\Desktop\Web-Scraping Project\src\utils\logger.py:198
+Function: _log_with_extra
+Traceback (most recent call last):
+  File "C:\Users\Icon\Desktop\Web-Scraping Project\src\core\scraper.py", line 414, in scrape_url
+    duplicates_removed = original_count - storage_results['stats']['items_saved']
+                                          ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'items_saved'
+2026-03-19 17:11:09 - web_app - [31mERROR[0m - Web scraping failed: 5b61bc5f-ad40-48d6-9229-bb2e71732cd1 - 'items_saved'
+File: C:\Users\Icon\Desktop\Web-Scraping Project\src\utils\logger.py:198
+Function: _log_with_extra
+
+2026-03-19 17:11:12 - selenium_driver - [31mERROR[0m - Unexpected error with Selenium: 'SeleniumDriver' object has no attribute 'performance_logger'
+File: C:\Users\Icon\Desktop\Web-Scraping Project\src\utils\logger.py:198
+Function: _log_with_extra
+
+2026-03-19 17:11:12 - advanced_scraper - [31mERROR[0m - Failed to fetch page: http://books.toscrape.com/
+File: C:\Users\Icon\Desktop\Web-Scraping Project\src\utils\logger.py:198
+Function: _log_with_extra
+
+2026-03-19 17:11:16 - selenium_driver - [31mERROR[0m - Unexpected error with Selenium: 'SeleniumDriver' object has no attribute 'performance_logger'
+File: C:\Users\Icon\Desktop\Web-Scraping Project\src\utils\logger.py:198
+Function: _log_with_extra
+
+2026-03-19 17:11:16 - advanced_scraper - [31mERROR[0m - Failed to fetch page: http://books.toscrape.com/catalogue/page-2.html
+File: C:\Users\Icon\Desktop\Web-Scraping Project\src\utils\logger.py:198
+Function: _log_with_extra
+
+2026-03-19 17:11:21 - selenium_driver - [31mERROR[0m - Unexpected error with Selenium: 'SeleniumDriver' object has no attribute 'performance_logger'
+File: C:\Users\Icon\Desktop\Web-Scraping Project\src\utils\logger.py:198
+Function: _log_with_extra
+
+2026-03-19 17:11:21 - advanced_scraper - [31mERROR[0m - Failed to fetch page: http://books.toscrape.com/catalogue/page-3.html
+File: C:\Users\Icon\Desktop\Web-Scraping Project\src\utils\logger.py:198
+Function: _log_with_extra
+
+2026-03-19 17:11:21 - advanced_scraper - [31mERROR[0m - Error occurred: 'items_saved'
+File: C:\Users\Icon\Desktop\Web-Scraping Project\src\utils\logger.py:198
+Function: _log_with_extra
+Traceback (most recent call last):
+  File "C:\Users\Icon\Desktop\Web-Scraping Project\src\core\scraper.py", line 414, in scrape_url
+    duplicates_removed = original_count - storage_results['stats']['items_saved']
+                                          ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'items_saved'
+2026-03-19 17:11:24 - web_app - [31mERROR[0m - Web scraping failed: 4bab262d-b524-4869-8430-40e2ca1216ce - 'items_saved'
+File: C:\Users\Icon\Desktop\Web-Scraping Project\src\utils\logger.py:198
+Function: _log_with_extra
+
+2026-03-19 17:19:10 - scraper_github.com - [31mERROR[0m - Error scraping page 1: 'query'
+File: C:\Users\Icon\Desktop\Web-Scraping Project\src\utils\logger.py:198
+Function: _log_with_extra
+
+2026-03-19 17:26:58 - scraper_github.com - [31mERROR[0m - Error scraping page 1: 'query'
+File: C:\Users\Icon\Desktop\Web-Scraping Project\src\utils\logger.py:198
+Function: _log_with_extra
+
+2026-03-19 17:37:48 - scraper_github.com - [31mERROR[0m - Error scraping page 1: 'query'
+File: C:\Users\Icon\Desktop\Web-Scraping Project\src\utils\logger.py:198
+Function: _log_with_extra
+
+2026-03-19 22:46:19 - scraper_news.ycombinator.com - [31mERROR[0m - Error scraping page 1: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+File: c:\Users\Icon\Desktop\Web-Scraping Project\src\utils\logger.py:198
+Function: _log_with_extra
+
+2026-03-19 23:06:57 - multi_site_scraper - [31mERROR[0m - Failed to load configuration: Illegal trailing comma before end of object: line 301 column 6 (char 8246)
+File: C:\Users\Icon\Desktop\Web-Scraping Project\src\utils\logger.py:198
+Function: _log_with_extra
+
+2026-03-19 23:06:57 - multi_site_cli - [31mERROR[0m - Scraping failed: 'global_settings'
+File: C:\Users\Icon\Desktop\Web-Scraping Project\src\utils\logger.py:198
+Function: _log_with_extra
+
+2026-03-19 23:08:34 - web_app - [31mERROR[0m - Web scraping failed: 82405442-7d61-44c2-9d35-5441552d970f - Website amazon.com not configured
+File: c:\Users\Icon\Desktop\Web-Scraping Project\src\utils\logger.py:198
+Function: _log_with_extra
+
+2026-03-19 23:08:45 - web_app - [31mERROR[0m - Web scraping failed: 47ed277c-4931-4407-ad49-8da437e074bd - Website indeed.com not configured
+File: c:\Users\Icon\Desktop\Web-Scraping Project\src\utils\logger.py:198
+Function: _log_with_extra
+
+2026-03-19 23:08:56 - web_app - [31mERROR[0m - Web scraping failed: ed730da5-afe0-4f5c-8efc-6212e40e8693 - Website daraz.pk not configured
+File: c:\Users\Icon\Desktop\Web-Scraping Project\src\utils\logger.py:198
+Function: _log_with_extra
+
+2026-03-19 23:12:59 - scraper_aliexpress.com - [31mERROR[0m - Error scraping page 1: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+File: C:\Users\Icon\Desktop\Web-Scraping Project\src\utils\logger.py:198
+Function: _log_with_extra
+
+2026-03-19 23:15:54 - web_app - [31mERROR[0m - Web scraping failed: a4338572-3790-4065-9ffb-5d959c4866ca - Website amazon.com not configured
+File: c:\Users\Icon\Desktop\Web-Scraping Project\src\utils\logger.py:198
+Function: _log_with_extra
+
+2026-03-19 23:16:03 - web_app - [31mERROR[0m - Web scraping failed: a3a81d86-8306-4007-8312-01b49f732e1f - Website amazon.com not configured
+File: c:\Users\Icon\Desktop\Web-Scraping Project\src\utils\logger.py:198
+Function: _log_with_extra
+
+2026-03-19 23:16:41 - web_app - [31mERROR[0m - Web scraping failed: 9e184cca-42e9-4bfb-ad1f-61ce6b87dc1e - Website amazon.com not configured
+File: c:\Users\Icon\Desktop\Web-Scraping Project\src\utils\logger.py:198
+Function: _log_with_extra
+
+2026-03-19 23:28:40 - scraper_aliexpress.com - [31mERROR[0m - Error scraping page 1: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+File: c:\Users\Icon\Desktop\Web-Scraping Project\src\utils\logger.py:198
+Function: _log_with_extra
+
+2026-03-19 23:28:55 - scraper_aliexpress.com - [31mERROR[0m - Error scraping page 1: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+File: c:\Users\Icon\Desktop\Web-Scraping Project\src\utils\logger.py:198
+Function: _log_with_extra
+
+2026-03-19 23:31:43 - scraper_indeed.com - [31mERROR[0m - Error scraping page 1: 'start'
+File: c:\Users\Icon\Desktop\Web-Scraping Project\src\utils\logger.py:198
+Function: _log_with_extra
+
+2026-03-19 23:31:56 - web_app - [31mERROR[0m - Web scraping failed: cf3358c7-c7cf-437e-a295-bd23cebd860f - Website ebay.com not configured
+File: c:\Users\Icon\Desktop\Web-Scraping Project\src\utils\logger.py:198
+Function: _log_with_extra
+
+2026-03-19 23:32:15 - scraper_aliexpress.com - [31mERROR[0m - Error scraping page 1: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+File: c:\Users\Icon\Desktop\Web-Scraping Project\src\utils\logger.py:198
+Function: _log_with_extra
+
+2026-03-19 23:36:44 - scraper_aliexpress.com - [31mERROR[0m - Error scraping page 1: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+File: C:\Users\Icon\Desktop\Web-Scraping Project\src\utils\logger.py:198
+Function: _log_with_extra
+
+2026-03-19 23:40:17 - scraper_aliexpress.com - [31mERROR[0m - Error scraping page 1: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+File: c:\Users\Icon\Desktop\Web-Scraping Project\src\utils\logger.py:198
+Function: _log_with_extra
+
+2026-03-20 00:29:17 - scraper_ebay.com - [31mERROR[0m - Error scraping page 1: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+File: C:\Users\Icon\Desktop\Web-Scraping Project\src\utils\logger.py:198
+Function: _log_with_extra
+
+2026-03-20 00:50:49 - scraper_ebay.com - [31mERROR[0m - Error scraping page 1: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+File: C:\Users\Icon\Desktop\Web-Scraping Project\src\utils\logger.py:198
+Function: _log_with_extra
+
+2026-03-20 01:07:19 - scraper_aliexpress.com - [31mERROR[0m - Error scraping page 1: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+File: C:\Users\Icon\Desktop\Web-Scraping Project\src\utils\logger.py:198
+Function: _log_with_extra
+
+2026-03-20 01:07:19 - web_app - [31mERROR[0m - Scraping failed for aliexpress.com: invalid literal for int() with base 10: '2.3'
+File: C:\Users\Icon\Desktop\Web-Scraping Project\src\utils\logger.py:198
+Function: _log_with_extra
+
+2026-03-20 01:24:51 - scraper_aliexpress.com - [31mERROR[0m - Error scraping page 1: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+File: C:\Users\Icon\Desktop\Web-Scraping Project\src\utils\logger.py:198
+Function: _log_with_extra
+
+2026-03-20 01:24:51 - web_app - [31mERROR[0m - Scraping failed for aliexpress.com: invalid literal for int() with base 10: '2.3'
+File: C:\Users\Icon\Desktop\Web-Scraping Project\src\utils\logger.py:198
+Function: _log_with_extra
+
+2026-03-20 01:25:00 - scraper_aliexpress.com - [31mERROR[0m - Error scraping page 1: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+File: C:\Users\Icon\Desktop\Web-Scraping Project\src\utils\logger.py:198
+Function: _log_with_extra
+
+2026-03-20 01:25:00 - web_app - [31mERROR[0m - Scraping failed for aliexpress.com: invalid literal for int() with base 10: '2.3'
+File: C:\Users\Icon\Desktop\Web-Scraping Project\src\utils\logger.py:198
+Function: _log_with_extra
+
+2026-03-20 01:25:05 - scraper_aliexpress.com - [31mERROR[0m - Error scraping page 1: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+File: C:\Users\Icon\Desktop\Web-Scraping Project\src\utils\logger.py:198
+Function: _log_with_extra
+
+2026-03-20 01:25:05 - web_app - [31mERROR[0m - Scraping failed for aliexpress.com: invalid literal for int() with base 10: '2.3'
+File: C:\Users\Icon\Desktop\Web-Scraping Project\src\utils\logger.py:198
+Function: _log_with_extra
+
+2026-03-20 01:30:20 - scraper_aliexpress.com - [31mERROR[0m - Error scraping page 1: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+File: C:\Users\Icon\Desktop\Web-Scraping Project\src\utils\logger.py:198
+Function: _log_with_extra
+
+2026-03-20 01:30:20 - web_app - [31mERROR[0m - Scraping failed for aliexpress.com: invalid literal for int() with base 10: '2.3'
+File: C:\Users\Icon\Desktop\Web-Scraping Project\src\utils\logger.py:198
+Function: _log_with_extra
+
+2026-03-20 01:30:27 - scraper_aliexpress.com - [31mERROR[0m - Error scraping page 1: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+File: C:\Users\Icon\Desktop\Web-Scraping Project\src\utils\logger.py:198
+Function: _log_with_extra
+
+2026-03-20 01:30:27 - web_app - [31mERROR[0m - Scraping failed for aliexpress.com: invalid literal for int() with base 10: '2.3'
+File: C:\Users\Icon\Desktop\Web-Scraping Project\src\utils\logger.py:198
+Function: _log_with_extra
+
+2026-03-20 01:30:30 - scraper_aliexpress.com - [31mERROR[0m - Error scraping page 1: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+File: C:\Users\Icon\Desktop\Web-Scraping Project\src\utils\logger.py:198
+Function: _log_with_extra
+
+2026-03-20 01:30:30 - web_app - [31mERROR[0m - Scraping failed for aliexpress.com: invalid literal for int() with base 10: '2.3'
+File: C:\Users\Icon\Desktop\Web-Scraping Project\src\utils\logger.py:198
+Function: _log_with_extra
+
+2026-03-20 01:30:54 - scraper_ebay.com - [31mERROR[0m - Error scraping page 1: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+File: C:\Users\Icon\Desktop\Web-Scraping Project\src\utils\logger.py:198
+Function: _log_with_extra
+
+2026-03-20 01:31:23 - scraper_aliexpress.com - [31mERROR[0m - Error scraping page 1: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+File: C:\Users\Icon\Desktop\Web-Scraping Project\src\utils\logger.py:198
+Function: _log_with_extra
+
+2026-03-20 01:31:23 - web_app - [31mERROR[0m - Scraping failed for aliexpress.com: invalid literal for int() with base 10: '2.3'
+File: C:\Users\Icon\Desktop\Web-Scraping Project\src\utils\logger.py:198
+Function: _log_with_extra
+
+2026-03-20 01:52:26 - scraper_ebay.com - [31mERROR[0m - Error scraping page 1: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+File: C:\Users\Icon\Desktop\Web-Scraping Project\src\utils\logger.py:198
+Function: _log_with_extra
+
+2026-03-20 02:14:18 - scraper_aliexpress.com - [31mERROR[0m - Error scraping page 1: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+File: C:\Users\Icon\Desktop\Web-Scraping Project\src\utils\logger.py:198
+Function: _log_with_extra
+
+2026-03-20 02:14:18 - web_app - [31mERROR[0m - Scraping failed for aliexpress.com: invalid literal for int() with base 10: '2.3'
+File: C:\Users\Icon\Desktop\Web-Scraping Project\src\utils\logger.py:198
+Function: _log_with_extra
+
+2026-03-20 02:15:11 - scraper_aliexpress.com - [31mERROR[0m - Error scraping page 1: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+File: C:\Users\Icon\Desktop\Web-Scraping Project\src\utils\logger.py:198
+Function: _log_with_extra
+
+2026-03-20 02:15:11 - web_app - [31mERROR[0m - Scraping failed for aliexpress.com: invalid literal for int() with base 10: '2.3'
+File: C:\Users\Icon\Desktop\Web-Scraping Project\src\utils\logger.py:198
+Function: _log_with_extra
+
+2026-03-21 11:10:14 - scraper_aliexpress.com - [31mERROR[0m - Error scraping page 1: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+File: C:\Users\Icon\Desktop\Web-Scraping Project\src\utils\logger.py:198
+Function: _log_with_extra
+
+2026-03-21 11:10:14 - web_app - [31mERROR[0m - Scraping failed for aliexpress.com: invalid literal for int() with base 10: '2.3'
+File: C:\Users\Icon\Desktop\Web-Scraping Project\src\utils\logger.py:198
+Function: _log_with_extra
+
+2026-03-21 11:22:15 - scraper_books.toscrape.com - [31mERROR[0m - Error scraping page 1: ("Connection broken: ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)", ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+File: C:\Users\Icon\Desktop\Web-Scraping Project\src\utils\logger.py:198
+Function: _log_with_extra
+
+2026-03-21 12:26:11 - scraper_ebay.com - [31mERROR[0m - Error scraping page 1: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+File: C:\Users\Icon\Desktop\Web-Scraping Project\src\utils\logger.py:198
+Function: _log_with_extra
+

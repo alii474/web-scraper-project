@@ -1,0 +1,324 @@
+{
+  "websites": {
+    "books.toscrape.com": {
+      "name": "Books to Scrape",
+      "category": "books",
+      "base_url": "http://books.toscrape.com/",
+      "search_url_pattern": "http://books.toscrape.com/catalogue/page-{page}.html",
+      "item_selector": "article.product_pod",
+      "fields": {
+        "title": {
+          "selector": "h3 a",
+          "attribute": "title",
+          "required": true
+        },
+        "price": {
+          "selector": "p.price_color",
+          "attribute": "text",
+          "required": true,
+          "type": "price"
+        },
+        "rating": {
+          "selector": "p.star-rating",
+          "attribute": "class",
+          "required": false,
+          "extract": "last"
+        },
+        "availability": {
+          "selector": "p.instock.availability",
+          "attribute": "text",
+          "required": false,
+          "clean": "strip"
+        },
+        "url": {
+          "selector": "h3 a",
+          "attribute": "href",
+          "required": true,
+          "transform": "absolute_url"
+        },
+        "image": {
+          "selector": "div.image_container img",
+          "attribute": "src",
+          "required": false,
+          "transform": "absolute_url"
+        }
+      },
+      "pagination": {
+        "enabled": true,
+        "max_pages": 100,
+        "next_page_pattern": "catalogue/page-{page}.html"
+      },
+      "delay": {
+        "min": 1.0,
+        "max": 2.0
+      },
+      "headers": {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+      }
+    },
+    
+    "quotes.toscrape.com": {
+      "name": "Quotes to Scrape",
+      "category": "quotes",
+      "base_url": "http://quotes.toscrape.com/",
+      "search_url_pattern": "http://quotes.toscrape.com/page/{page}/",
+      "item_selector": "div.quote",
+      "fields": {
+        "title": {
+          "selector": "span.text",
+          "attribute": "text",
+          "required": true
+        },
+        "author": {
+          "selector": "small.author",
+          "attribute": "text",
+          "required": true
+        },
+        "tags": {
+          "selector": "div.tags a.tag",
+          "attribute": "text",
+          "required": false,
+          "multiple": true
+        },
+        "url": {
+          "selector": "span a",
+          "attribute": "href",
+          "required": false
+        }
+      },
+      "pagination": {
+        "enabled": true,
+        "max_pages": 50,
+        "next_page_pattern": "page/{page}/"
+      },
+      "delay": {
+        "min": 0.5,
+        "max": 1.5
+      }
+    },
+    
+    "news.ycombinator.com": {
+      "name": "Hacker News",
+      "category": "news",
+      "base_url": "https://news.ycombinator.com/",
+      "search_url_pattern": "https://news.ycombinator.com/news?p={page}",
+      "item_selector": "tr.athing",
+      "fields": {
+        "title": {
+          "selector": "span.titleline a",
+          "attribute": "text",
+          "required": true
+        },
+        "url": {
+          "selector": "span.titleline a",
+          "attribute": "href",
+          "required": true
+        },
+        "score": {
+          "selector": "span.score",
+          "attribute": "text",
+          "required": false,
+          "extract": "number"
+        },
+        "author": {
+          "selector": "a.hnuser",
+          "attribute": "text",
+          "required": false
+        },
+        "comments": {
+          "selector": "span.subline a[href*='item?id=']",
+          "attribute": "text",
+          "required": false,
+          "extract": "number"
+        },
+        "time": {
+          "selector": "span.age a",
+          "attribute": "text",
+          "required": false
+        }
+      },
+      "pagination": {
+        "enabled": true,
+        "max_pages": 20,
+        "next_page_pattern": "news?p={page}"
+      },
+      "delay": {
+        "min": 2.0,
+        "max": 4.0
+      }
+    },
+    
+    "ebay.com": {
+      "name": "eBay Products",
+      "category": "shopping",
+      "base_url": "https://www.ebay.com/",
+      "search_url_pattern": "https://www.ebay.com/sch/i.html?_nkw=laptop&_pgn={page}",
+      "item_selector": "div.s-item",
+      "fields": {
+        "title": {
+          "selector": "div.s-item__title",
+          "attribute": "text",
+          "required": true
+        },
+        "price": {
+          "selector": "span.s-item__price",
+          "attribute": "text",
+          "required": true,
+          "type": "price"
+        },
+        "rating": {
+          "selector": "div.s-item__reviews",
+          "attribute": "text",
+          "required": false
+        },
+        "url": {
+          "selector": "a.s-item__link",
+          "attribute": "href",
+          "required": true
+        },
+        "bids": {
+          "selector": "span.s-item__bids",
+          "attribute": "text",
+          "required": false
+        }
+      },
+      "pagination": {
+        "enabled": true,
+        "max_pages": 10,
+        "next_page_pattern": "sch/i.html?_nkw=laptop&_pgn={page}"
+      },
+      "delay": {
+        "min": 2.0,
+        "max": 4.0
+      },
+      "headers": {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+      }
+    },
+    
+    "indeed.com": {
+      "name": "Indeed Jobs",
+      "category": "jobs",
+      "base_url": "https://www.indeed.com/",
+      "search_url_pattern": "https://www.indeed.com/jobs?q=developer&start={start}",
+      "item_selector": "div.job_seen_beacon",
+      "fields": {
+        "title": {
+          "selector": "h2 a",
+          "attribute": "text",
+          "required": true
+        },
+        "company": {
+          "selector": "span.companyName",
+          "attribute": "text",
+          "required": true
+        },
+        "location": {
+          "selector": "div.companyLocation",
+          "attribute": "text",
+          "required": false
+        },
+        "salary": {
+          "selector": "div.salary-snippet-container",
+          "attribute": "text",
+          "required": false
+        },
+        "url": {
+          "selector": "h2 a",
+          "attribute": "href",
+          "required": true
+        }
+      },
+      "pagination": {
+        "enabled": true,
+        "max_pages": 10,
+        "next_page_pattern": "jobs?q=developer&start={start}",
+        "start_pattern": "increment"
+      },
+      "delay": {
+        "min": 2.0,
+        "max": 4.0
+      },
+      "headers": {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+        "Accept-Language": "en-US,en;q=0.5"
+      }
+    },
+    
+    "aliexpress.com": {
+      "name": "AliExpress Products",
+      "category": "shopping",
+      "base_url": "https://www.aliexpress.com/",
+      "search_url_pattern": "https://www.aliexpress.com/wholesale?SearchText=phone&catId=0&SortType=default&page={page}",
+      "item_selector": "div.JIIxO",
+      "fields": {
+        "title": {
+          "selector": "h3 a",
+          "attribute": "text",
+          "required": true
+        },
+        "price": {
+          "selector": "span.mNn3u",
+          "attribute": "text",
+          "required": true,
+          "type": "price"
+        },
+        "rating": {
+          "selector": "span.eXPaG",
+          "attribute": "text",
+          "required": false
+        },
+        "url": {
+          "selector": "h3 a",
+          "attribute": "href",
+          "required": true
+        },
+        "sales": {
+          "selector": "span.iQaCq",
+          "attribute": "text",
+          "required": false
+        }
+      },
+      "pagination": {
+        "enabled": true,
+        "max_pages": 10,
+        "next_page_pattern": "wholesale?SearchText=phone&catId=0&SortType=default&page={page}"
+      },
+      "delay": {
+        "min": 2.0,
+        "max": 4.0
+      },
+      "headers": {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+      }
+    }
+  },
+  
+  "global_settings": {
+    "default_max_pages": 20,
+    "default_delay_min": 1.0,
+    "default_delay_max": 2.0,
+    "timeout": 30,
+    "max_retries": 3,
+    "user_agents": [
+      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Edge/120.0.0.0"
+    ],
+    "output_format": {
+      "common_fields": [
+        "title",
+        "url", 
+        "source",
+        "category",
+        "scraped_at",
+        "price"
+      ],
+      "price_fields": ["price"],
+      "rating_fields": ["rating", "score", "stars"],
+      "author_fields": ["author", "author_name", "posted_by"],
+      "description_fields": ["description", "tags", "quote_tags"]
+    }
+  }
+}

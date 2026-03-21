@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Test</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding: 20px;
+            background: #f8f9fa;
+        }
+        .website-options {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            z-index: 9999;
+            margin-top: 5px;
+            max-height: 200px;
+            overflow-y: auto;
+            display: none;
+        }
+        .website-option {
+            padding: 10px 15px;
+            border-bottom: 1px solid #f0f0f0;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .website-option:hover {
+            background: #f8f9fa;
+        }
+        .website-option:last-child {
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Website Dropdown Test</h1>
+        
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <div class="website-dropdown">
+                    <div class="input-group">
+                        <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="website-dropdown-btn">
+                            <i class="fas fa-globe me-2"></i>
+                            <span id="selected-website">Select Website</span>
+                        </button>
+                        <input type="text" class="form-control" id="search-input" placeholder="Website URL will appear here">
+                    </div>
+                    
+                    <div class="website-options" id="website-options">
+                        <div class="website-option" data-website="books.toscrape.com">
+                            <div class="website-option-title">📚 Books to Scrape</div>
+                            <div class="website-option-desc">Scrape books with prices and ratings</div>
+                        </div>
+                        <div class="website-option" data-website="quotes.toscrape.com">
+                            <div class="website-option-title">💬 Quotes to Scrape</div>
+                            <div class="website-option-desc">Scrape quotes and authors</div>
+                        </div>
+                        <div class="website-option" data-website="news.ycombinator.com">
+                            <div class="website-option-title">📰 Hacker News</div>
+                            <div class="website-option-desc">Scrape news articles and scores</div>
+                        </div>
+                        <div class="website-option" data-website="ebay.com">
+                            <div class="website-option-title">🛒 eBay Products</div>
+                            <div class="website-option-desc">Real shopping - laptops & auctions</div>
+                        </div>
+                        <div class="website-option" data-website="indeed.com">
+                            <div class="website-option-title">💼 Indeed Jobs</div>
+                            <div class="website-option-desc">Real job listings - developer roles</div>
+                        </div>
+                        <div class="website-option" data-website="aliexpress.com">
+                            <div class="website-option-title">🛍️ AliExpress Products</div>
+                            <div class="website-option-desc">Real shopping - phones & gadgets</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row mt-4">
+            <div class="col-12">
+                <div class="alert alert-info">
+                    <h5>Debug Information:</h5>
+                    <p>Selected Website: <strong id="debug-selected">None</strong></p>
+                    <p>Dropdown Status: <strong id="debug-dropdown">Hidden</strong></p>
+                    <p>Console logs will show detailed information</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('DOM loaded');
+            
+            let selectedWebsite = null;
+            
+            const dropdownBtn = document.getElementById('website-dropdown-btn');
+            const websiteOptions = document.getElementById('website-options');
+            const websiteOptionElements = document.querySelectorAll('.website-option');
+            
+            console.log('Elements found:', {
+                dropdownBtn: !!dropdownBtn,
+                websiteOptions: !!websiteOptions,
+                websiteOptionElements: websiteOptionElements.length
+            });
+            
+            // Dropdown toggle
+            dropdownBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                console.log('Dropdown button clicked');
+                
+                const currentDisplay = websiteOptions.style.display;
+                websiteOptions.style.display = currentDisplay === 'none' || currentDisplay === '' ? 'block' : 'none';
+                
+                document.getElementById('debug-dropdown').textContent = 
+                    websiteOptions.style.display === 'block' ? 'Visible' : 'Hidden';
+            });
+            
+            // Website selection
+            websiteOptionElements.forEach(option => {
+                console.log('Setting up click listener for:', option.dataset.website);
+                
+                option.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    console.log('Website option clicked:', this.dataset.website);
+                    
+                    selectedWebsite = this.dataset.website;
+                    const websiteName = this.querySelector('.website-option-title').textContent;
+                    
+                    document.getElementById('selected-website').textContent = websiteName;
+                    document.getElementById('debug-selected').textContent = selectedWebsite;
+                    websiteOptions.style.display = 'none';
+                    
+                    // Show URL
+                    const websiteUrls = {
+                        'books.toscrape.com': 'http://books.toscrape.com/',
+                        'quotes.toscrape.com': 'http://quotes.toscrape.com/',
+                        'news.ycombinator.com': 'https://news.ycombinator.com/',
+                        'ebay.com': 'https://www.ebay.com/sch/i.html?_nkw=laptop',
+                        'indeed.com': 'https://www.indeed.com/jobs?q=developer',
+                        'aliexpress.com': 'https://www.aliexpress.com/wholesale?SearchText=phone'
+                    };
+                    
+                    document.getElementById('search-input').value = websiteUrls[selectedWebsite] || '';
+                    console.log('Website selected:', selectedWebsite);
+                });
+            });
+            
+            // Close dropdown when clicking outside
+            document.addEventListener('click', function(event) {
+                if (!websiteOptions.contains(event.target) && !dropdownBtn.contains(event.target)) {
+                    websiteOptions.style.display = 'none';
+                    document.getElementById('debug-dropdown').textContent = 'Hidden';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
